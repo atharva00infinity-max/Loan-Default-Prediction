@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef3f8;
+    padding:40px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:800px;
+    max-width: 95%;
+    background:white;
+    padding: 30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#0b5ed7;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #d9d9d9;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#0b5ed7;
+}
+
+label{
+    font-weight:500;
+}
+
+button{
+    grid-column:1/3;
+    padding:14px;
+    background:#0b5ed7;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#084298;
+}
+
+h3{
+    margin-top:30px;
+    text-align:center;
+}
+
+#prediction{
+    color:#dc3545;
+    font-weight:bold;
+}
+
+#probability{
+    color:#198754;
+    font-weight:bold;
+}
